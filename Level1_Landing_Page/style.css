@@ -1,0 +1,239 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 40px;
+}
+
+html{
+    scroll-behavior: smooth;          /* for smooth scrolling*/ 
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.99;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    background-color: bisque;
+    margin: 10px 34px;
+}
+
+#logo img{
+    margin: 10px 30px;
+    height: 45px;
+}
+
+/* Navigation Bar: List styling */
+#navbar ul{
+    display: flex;                     /* to make all the items in the one straight row*/
+    font-family: 'Baloo 2', cursive;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    display: block;           /* since we need to add padding*/
+    padding: 5px 22px;
+    border-radius: 35px;
+    text-decoration: none;     /* to remove the underline*/
+    color: white;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: bisque;
+}
+
+.search{
+    padding: 7px 20px;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+#home::before{
+    content: "";
+    background:url('back.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+#home .msg{
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+}
+
+#home p{
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Roboto Slab', serif;
+}
+
+/*Services container */
+#services{
+    margin: 34px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid black;
+    padding: 30px;
+    margin: 3px 30px;
+    border-radius: 23px;
+    background-color: rgb(237, 226, 213);
+}
+
+#services .box img{
+    height: 150px;
+    margin: auto;
+    display: block;
+}
+
+#services .box p{
+    font-family: 'Roboto Slab', serif;
+}
+
+/* Clients -  section */
+#delivery-section{
+    height: 344px;
+}
+
+#delivery-section::before{      
+    content: "";
+    position: absolute;
+    background: url('bg2.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 44%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#delivery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#delivery img{
+    height: 120px;
+}
+
+.delivery-item{
+    padding: 50px;
+}
+
+/* Contact us section */
+
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.78;
+    background: url('contact.jpg') no-repeat center center/cover;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Roboto Slab', serif;;
+}
+
+#contact-box input, textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+/* Footer */
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* utility class */
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    margin: 20px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.btn{
+    padding: 3px 8px;
+    border: 3px solid black;
+    background-color: rgb(220, 195, 164);
+    margin: 30px;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}

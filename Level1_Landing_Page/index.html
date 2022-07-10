@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best-Meals Services</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- responsive- phone ccs sheet -->
+    <link rel="stylesheet" media="screen and (max-width: 1213px)" href="phone.css">
+
+    <!-- fonts styles imported from google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.png" alt="BestMeals.com">
+        </div>
+
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">Services</a></li>
+            <li class="item"><a href="#delivery-section">Delivery</a></li>
+            <li class="item"><a href="#contact">Contact-Us</a></li>       
+        </ul>
+
+        <input type="text" class="search" placeholder="Search.." name="search">
+        <button class="btn">Search</button> 
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary">Welcome to Best Meal Services</h1>
+        <p>" We Provide Best Meals to people anywhere arround the city. Order your favourite Cheat-Meals and Food from our
+            best delivery services. Click on the button below to order your food. "</p>
+        <p class="msg">Happy Meals !!!</p>
+        <button class="btn">Order Now</button>
+    </section>
+
+    <!-- services for the customer -->
+    <section class="services-section" id="services-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="indian.jpg" alt="Our Services">
+                <h2 class="h-secondary center">Indian Food</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo veniam dolorum aut nobis
+                    necessitatibus neque illum. Velit iusto delectus magni recusandae ut. Aspernatur, fuga quod.</p>
+            </div>
+
+            <div class="box">
+                <img src="chinese.jpg" alt="Our Services">
+                <h2 class="h-secondary center">Chinese Food</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo veniam dolorum aut nobis
+                    necessitatibus
+                    neque illum. Velit iusto delectus magni recusandae ut. Aspernatur, fuga quod.</p>
+            </div>
+
+            <div class="box">
+                <img src="italian.jpg" alt="Our Services">
+                <h2 class="h-secondary center">Italian Food</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo veniam dolorum aut nobis
+                    necessitatibus neque illum. Velit iusto delectus magni recusandae ut. Aspernatur, fuga quod.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="delivery-section">
+        <h1 class="h-primary center">Delivery Partners</h1>
+        <div id="delivery">
+            <div class="delivery-item">
+                <img src="div1.png" alt="Delivery">
+            </div>
+
+            <div class="delivery-item">
+                <img src="div2.png" alt="Delivery">
+            </div>
+            
+            <div class="delivery-item">
+                <img src="div5.jpg" alt="Delivery">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name : </label>
+                    <input type="text" placeholder="Enter your Name" name="name" id="name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email : </label>
+                    <input type="email" placeholder="Enter your Email" name="name" id="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number : </label>
+                    <input type="phone" placeholder="Enter your Phone Number" name="name" id="phone">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message / Comment : </label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+
+                <button class="btn">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="center">Copyright &copy; www.BestMeals.com. All rights reserved.</div>
+    </footer>
+</body>
+
+</html>
