@@ -1,0 +1,136 @@
+header{
+    padding: 24px 25px;
+}
+header::before{
+    background-color: black;
+}
+.logo{
+    font-size: 35px;
+}
+.navbar a{
+    font-size: 18px;
+    padding: 15px 25px;
+    border-radius: 15px;
+}
+section{
+    padding: 250px 6%;
+}
+.home{
+    /* position: relative; */
+    padding: 220px 78%;             /* to make item image in center -- section*/
+    padding-top: 6px;
+    height: 70vh;
+}
+.intro{
+    width: 90px;
+    padding-top: 50px;
+}
+.intro h3{
+    font-size: 20px;
+}
+.intro h1{
+    font-size: 30px;
+}
+.intro h4{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.intro p{
+    max-width: 450px;
+    font-size: 20px;
+}
+.btn{
+    font-size: 13px;
+    padding: 4px 4px;
+    border: 1px solid white;
+    box-shadow: 2px 2px white;
+}
+.btn:hover{
+    background-color: white;
+    box-shadow: 2px 2px #FA8072;
+}
+.home-img{
+    width: 250px;
+    padding-top: 40px;
+}
+/* About section */
+.about{
+    display: flex;
+    flex-direction: column;
+}
+.about img{
+    padding-top: 10px;
+}
+.about-img img{
+    margin-left: 150px;
+    width: 500px;
+}
+.about-text{
+    margin-left: 300px;
+    width: 400px;
+}
+.about-text h2{
+    font-size: 35px;
+}
+.about-text p{
+    font-size: 25px;
+}
+
+/* Skills section */
+.skills{
+    padding-top: 5px;
+}
+.skills h2{
+    padding-top: 4px;
+    text-align: center;
+}
+.center h2{
+    font-size: 40px;
+}
+.skills-content{
+    margin-left: 100px;
+    grid-gap: 2rem;
+    margin-top: 1.4rem;
+}
+.row{
+    padding: 14px 60px;
+    border-radius: 20px;
+}
+/* projects and experience  */
+.projects{
+    padding-top: 4px;
+    margin-top: 8px;
+}
+.projects h2{
+    margin-left: 200px;
+}
+.project-content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    grid-gap: 1rem;
+    width: 450px;
+}
+.box{
+    padding: 35px 35px;
+    border-radius: 10px;
+}
+.contact{
+    padding-top: 4px;
+    margin-top: 4px;
+}
+.contact h2{
+    margin-left: 50px;
+    width: 500px;
+}
+.contact-form{
+    margin-left: 100px;
+    width: 400px;
+}
+.contact-form form{
+    width: 800px;
+}
+footer{
+    margin-left: 150px;
+    width: 400px;
+}
