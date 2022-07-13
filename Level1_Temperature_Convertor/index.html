@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Convertor Calculator</title>
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- responsive styling -->
+    <link rel="stylesheet" media="screen and (max-width: 520px)" href="phone.css">
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+    <div class="calculator">
+        <h2>Temperature Convertor</h2>
+        <form action name="form" class="form" onsubmit="ConvertTemp(); return false">
+            <div class="Inputs">
+                <div class="choice">
+                    <div class="from">
+                        <label for>From : </label>
+                        <select name="input" id="input" class="box">
+                            <option value="celsius">Celsius (°C)</option>
+                            <option value="fahrenheit">Fahrenheit (°F)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="choice">
+                    <div class="to">
+                        <label for>To : </label>
+                        <select name="output" id="output" class="box">
+                            <option value="fahrenheit">Fahrenheit (°F)</option>
+                            <option value="celsius">Celsius (°C)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="user-input">
+                <label for>Enter Value : </label>
+                <input type="text" placeholder="0" name="value" id="input-value" class="box">
+            </div>
+
+            <div class="buttons">
+                <button type="submit" class="btn1" id="convert" onclick="ConvertTemp()">Convert</button>
+                <button type="reset" class="btn2" id="clear" onclick="reset()">Clear</button>
+            </div>
+            <div class="result">
+                <label for>Answer : </label>
+                <input type="text" name="value" id="result" class="box" placeholder="answer">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
