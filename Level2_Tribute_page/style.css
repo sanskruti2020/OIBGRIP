@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: wheat;
+    color: black;
+    font-family: 'Roboto Slab', serif;
+}
+
+h1{
+    align-items: center;
+    padding-left: 36rem;
+    font-weight: bolder;
+    font-size: 55px;
+    text-shadow: 3px 3px 3px rgb(128, 106, 67)
+}
+/* 1st container */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.image1{
+    flex-basis: 96%;
+}
+img{
+    position: relative;
+    height: 367px;
+    width: 410px;
+    padding: 10px 29px;
+    margin-top: 46px;
+    margin-left: 35px;
+}
+img:hover{
+    transform: translateY(-15px);
+    box-shadow: 5px 5px 5px;
+}
+.box1{
+    position: absolute;
+    height: 367px;
+    width: 739px;
+    margin-left: 546px;
+    margin-top: 45px;
+}
+.box1:hover{
+    transform: translateY(-15px);
+    box-shadow: 5px 10px 20px;
+}
+p{
+    padding: 20px 20px;
+    font-size: 18px;
+}
+
+/*  2nd container  */
+.box2{
+    flex-basis: 60%;
+    height: 367px;
+    margin-top: 75px;
+    margin-right: 100px;
+    margin-left: 80px;
+}
+.box2:hover{
+    transform: translateY(-15px);
+    box-shadow: 5px 10px 20px;
+}
+.box2 h3, .box1 h3{
+    align-items: center;
+    padding-left: 150px;
+    font-weight: bolder;
+    font-size: 30px;
+    text-shadow: 3px 3px 3px rgb(128, 106, 67)
+}
+.image2{
+    margin-top: 35px;
+    margin-right: 80px;
+}
+
+#box3{
+    height: 450px;
+    margin-top: 160px;
+}
+#image3{
+    margin-top: 90px;
+}
